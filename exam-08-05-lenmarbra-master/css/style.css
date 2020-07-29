@@ -1,0 +1,66 @@
+/* disable these when you're done */
+/* .ui-grid-container-one {
+  background-image: url('/images/grid-1.png');
+} */
+/* .ui-grid-container-two {
+  background-image: url('/images/grid-2.png');
+} */
+/* .ui-grid-container-three {
+  background-image: url('/images/grid-3.png');
+} */
+/* your CSS goes here */
+
+.ui-grid-container{
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(5, auto);
+}
+
+.ui-grid-container div:nth-child(odd){
+  background-color: #6495ed;
+}
+
+.seven{
+  grid-column: 2/6;
+  grid-row: 2/4;
+  background-color: #ed64a4;
+}
+
+.ui-grid-container-third{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.blue{
+  grid-column: 1 / 5;
+  grid-row: 1 / 6;
+  background-color: #6495ed;
+}
+
+.pink{
+  grid-column: 5 / 6;
+  grid-row: 1 / 6;
+  background-color: #ed64a4;
+}
+
+.text{
+  grid-column: 3 / 6;
+  grid-row: 4 / 5; 
+  background-color: none;
+}
+
+.text h1{
+  margin: 0;
+  text-align: righ;
+  padding-right: 20px;
+  color: #d0166d;
+  font-size: 7em;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1em;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0px #ffffff61;
+}
+
+
